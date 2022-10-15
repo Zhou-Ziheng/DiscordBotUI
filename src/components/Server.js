@@ -12,7 +12,7 @@ const Server = ({ server }) => {
 
   const fetchStuff = async () => {
     var res = await axios.get(
-      "http://143.244.203.14:8000/login/servers" + server.server_id + "/"
+      "http://143.244.203.14:8000/login/servers/" + server.server_id + "/"
     );
     setServerData(res.data.data);
   };
